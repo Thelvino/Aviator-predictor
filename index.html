@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviator Predictor</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-dark text-white text-center p-4">
+        Aviator Predictor
+    </header>
+
+    <!-- Predictor Form -->
+    <section id="predictor" class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2>Enter Flight Details</h2>
+                <form id="predictorForm">
+                    <div class="form-group">
+                        <label for="origin">Origin:</label>
+                        <input type="text" class="form-control" id="origin" placeholder="Enter origin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination:</label>
+                        <input type="text" class="form-control" id="destination" placeholder="Enter destination" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="departureDate">Departure Date:</label>
+                        <input type="date" class="form-control" id="departureDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="departureTime">Departure Time:</label>
+                        <input type="time" class="form-control" id="departureTime" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Predict</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Result Section -->
+    <section id="result" class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2>Prediction Result</h2>
+                <div id="predictionResult" class="text-center"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
